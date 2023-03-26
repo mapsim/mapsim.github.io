@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dynamic-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../images/rato1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    animation-name: backgroundAnimation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-image: url("../images/rato2.jpg");
+    }
+    50% {
+      background-image: uurl("../images/rato3.jpg");
+    }
+    100% {
+      background-image: url("../images/rato4.jpg");
+    }
+  }

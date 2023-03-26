@@ -14,7 +14,8 @@ body {
 
 /* Header styles */
 header {
-    background-color: #F8F8F8;
+    background-color: #215469ad;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
@@ -29,6 +30,12 @@ header h2 {
     font-size: 24px;
     color: #666;
     margin-bottom: 20px;
+}
+
+header img {
+    max-width: 10%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 /* Main styles */
@@ -78,6 +85,45 @@ blockquote {
     color: #333;
     margin-bottom: 10px;
 }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+nav li {
+    list-style: none;
+    display: flex;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    display: block;
+    color: #b54444;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-item {
+    flex: 1 0 20%; /* 25% width for each column */
+    background-color: #b8519200;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 
 /* Footer styles */
 footer {
